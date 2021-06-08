@@ -7,7 +7,7 @@ weatherForm.addEventListener('submit',(event)=>{
     event.preventDefault()
 
     forecast_para.innerHTML='...loading'
-    var url='http://localhost:3000/weather?address='+search_location.value
+    var url='/weather?address='+search_location.value
 
     fetch(url).then((response)=>{
         response.json().then((data)=>{

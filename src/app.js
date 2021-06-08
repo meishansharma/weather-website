@@ -4,6 +4,8 @@ const geocode=require('./utils/geocode.js')
 const weather=require('./utils/weather.js')
 const hbs=require('hbs')
 
+const port=process.env.PORT || 3000
+
 var app = express()
 
 
@@ -118,6 +120,8 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('Server is up and running')
+// port value defined above both for heroku and locally
+
+app.listen(port,()=>{
+    console.log('Server is up and running on port '+ port)
 })
