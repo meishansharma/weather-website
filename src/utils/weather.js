@@ -18,7 +18,10 @@ var weather=(obj,callback)=>{
                 //     temp:data.current.temperature,
                 //     feels:data.current.feelslike 
                 // })
-                callback(undefined,data.current.weather_descriptions[0]+'.'+' It is currently '+data.current.temperature+' degress out. It feels like '+data.current.feelslike+' degrees')
+
+                // callback(undefined,data.current.weather_descriptions[0]+'.'+' It is currently '+data.current.temperature+' degress out. It feels like '+data.current.feelslike+' degrees')
+                
+                callback(undefined,data.current)
             }
         }
     })

@@ -88,7 +88,8 @@ app.get('/weather',(req,res)=>{
                     // })
                     res.send({
                         place:response.place_name,
-                        forecast:response1
+                        returned_obj:response1
+                        // forecast:response1
                     })
                 }
             })
