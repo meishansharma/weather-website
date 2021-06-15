@@ -40,7 +40,8 @@ app.get('',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about',{
         title:"About Page",
-        name:'Ishan Sharma'
+        name:'Ishan Sharma',
+        message:'This is a weather website which provides information like current temperature, overall weather and many more.'
     })
 })
 
